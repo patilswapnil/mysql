@@ -3,7 +3,7 @@
 UPDATE stud t, (SELECT create_at, stud_id FROM stud) t1
 SET t.create_at = '2016-07-29'
 WHERE t.stud_id = t1.stud_id;
----------------------------------------------------------
+#---------------------------------------------------------
 
 # update create_at field by specific geting time_zone timezone field and UTC ::
 #mysql> select * from stud; #exiting table 
